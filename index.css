@@ -1,0 +1,105 @@
+/*Dark mode*/
+body {
+  background-color: #a8acb5;
+}
+
+/*Includes header and navigation links*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Fullstack Bakery*/
+.header {
+  font-size: 36pt;
+  font-weight: bold;
+  color: #3a506b;
+}
+
+/*Navigation bar with links*/
+.nav {
+  display: flex;
+  margin-right: 1%;
+  gap: 5rem;
+  font-size: 16pt;
+}
+
+/*Step-1*/
+.pastries-items {
+  width: 100px;
+  height: 50px;
+  background-color: #3a506b;
+  border-color: #3a506b;
+  color: #dae1ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18pt;
+}
+
+main {
+  display: flex;
+}
+
+/*List of pastries*/
+.pastries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5ch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+/*Added to space font away from right side to remove horizontal scrollbar*/
+p {
+  display: flex;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  margin-right: 7ch;
+}
+
+.testimonial {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  background-color: aliceblue;
+}
+
+figcaption {
+  display: flex;
+  justify-content: left;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  gap: 1ch;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5ch;
+  margin-right: 1%;
+  background-color: black;
+  color: aliceblue;
+}

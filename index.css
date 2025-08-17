@@ -1,5 +1,19 @@
-/*Dark mode*/
+/*Adjusted overflow and margin/padding to remove any scrollbars or empty space*/
+html {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*Dark mode, added min-height to take up entire viewport so social media box is at bottom and removed any scrollbars and empty space.*/
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   background-color: #a8acb5;
 }
 
@@ -50,8 +64,9 @@ header {
 
 /*Flex box for main body with some spacing away from left hand sidebar*/
 main {
+  flex: 1;
   display: flex;
-  gap: 1ch;
+  gap: 1;
 }
 
 /*Flex box for body of page. Made into column so it reads from top to bottom, some margin away from the right side*/
@@ -60,7 +75,7 @@ article {
   flex-direction: column;
   align-items: baseline;
   width: 100%;
-  margin-right: 7ch;
+  overflow-y: auto;
 }
 
 /*bigger font for Best bakery in the business!*/
@@ -86,8 +101,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5ch;
-  margin-right: 1%;
   background-color: black;
   color: aliceblue;
 }

@@ -14,7 +14,6 @@ header {
 .header {
   font-size: 36pt;
   font-weight: bold;
-  color: #3a506b;
 }
 
 /*Navigation bar with links*/
@@ -25,24 +24,20 @@ header {
   font-size: 16pt;
 }
 
-/*Step-1*/
+/*Left hand sidebar: created flex boxes and adjusted font size and color*/
 .pastries-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 50px;
   background-color: #3a506b;
   border-color: #3a506b;
-  color: #dae1ec;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #ffffff;
   font-size: 18pt;
 }
 
-main {
-  display: flex;
-}
-
-/*List of pastries*/
+/*Left hand sidebar items: Made sidebar a column, added gaps and spacing.*/
 .pastries {
   display: flex;
   flex-direction: column;
@@ -53,15 +48,13 @@ main {
   margin: 0;
 }
 
-h1 {
-  font-size: 24pt;
-}
-
-/*Added to space font away from right side to remove horizontal scrollbar*/
-p {
+/*Flex box for main body with some spacing away from left hand sidebar*/
+main {
   display: flex;
+  gap: 1ch;
 }
 
+/*Flex box for body of page. Made into column so it reads from top to bottom, some margin away from the right side*/
 article {
   display: flex;
   flex-direction: column;
@@ -70,29 +63,24 @@ article {
   margin-right: 7ch;
 }
 
+/*bigger font for Best bakery in the business!*/
+h1 {
+  font-size: 24pt;
+}
+
+/*Background color and font adjustments for testimonial quote so it stands out*/
 .testimonial {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-around;
-  background-color: aliceblue;
-}
-
-figcaption {
-  display: flex;
-  justify-content: left;
-}
-
-blockquote {
+  background-color: #f0f8ff;
   font-style: italic;
+  font-weight: 600;
 }
 
-main {
-  display: flex;
-  gap: 1ch;
-}
-
+/*Flex box for font and background color adjustments for social media shoutout*/
 footer {
   height: 50px;
   display: flex;

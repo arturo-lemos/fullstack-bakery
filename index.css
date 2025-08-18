@@ -1,7 +1,6 @@
 /*Adjusted overflow and margin/padding to remove any scrollbars or empty space*/
 html {
   height: 100%;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: #a8acb5;
@@ -22,6 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1ch;
 }
 
 /*Fullstack Bakery*/
@@ -43,6 +42,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1ch;
   width: 100px;
   height: 50px;
   background-color: #3a506b;
@@ -74,8 +74,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  width: 100%;
-  overflow-y: auto;
+  padding-right: 10ch;
 }
 
 /*bigger font for Best bakery in the business!*/
@@ -86,13 +85,14 @@ h1 {
 /*Background color and font adjustments for testimonial quote so it stands out*/
 .testimonial {
   display: flex;
-  width: 100%;
+
   flex-direction: column;
   align-items: baseline;
   justify-content: space-around;
   background-color: #f0f8ff;
   font-style: italic;
   font-weight: 600;
+  width: 100%;
 }
 
 /*Flex box for font and background color adjustments for social media shoutout*/
